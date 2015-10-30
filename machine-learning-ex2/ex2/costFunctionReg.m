@@ -22,7 +22,7 @@ J = 1/m*(transpose(-y)*(log(sigmoid(X*theta))) - transpose(1-y)*log(1-sigmoid(X*
 
 gradtemp = lambda/m*theta
 gradtemp(1) = 0
-grad = 1/m*(transpose(X)*(sigmoid(X*theta)-y)) - gradtemp
+grad = 1/m*(transpose(X)*(sigmoid(X*theta)-y)) + gradtemp
 
 
 
